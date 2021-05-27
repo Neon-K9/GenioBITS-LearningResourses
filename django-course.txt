@@ -1,0 +1,34 @@
+LEC1 17/5
+pip3 install django //to install django
+create a new project- goto terminal->
+django-admin startproject <project-name>        //to start project
+python3 -m venv .        //to set environment
+source .\Scripts\activate  or bin/activate      //to activate django(windows)
+
+manage.py--- to manage the project
+python3 manage.py runserver   //to run project---and get localhost
+
+db.sqlite3=== we get when we activate the project
+
+python3 manage.py makemigrations
+python3 manage.py migrate   //for creating db
+
+-------------------------------------------------------------------------
+LEC2 25/5
+
+ django-admin startapp UserAccount //to initialise app
+views.py ---to create views
+urls.py ---to add urls so that its accessible when code runs
+{*snippet 
+***urlpatterns = [
+    path('admin/', admin.site.urls),
+     path('user_acct/', include(UserAccount)),
+   
+]
+***view ex. 
+
+}
+-----------------------------------------------------------------------------
+LEC3 27/5
+lets continue making templates
+
